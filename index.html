@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Roll Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Your Roll Number</h1>
+    <div class="container">
+      <input type="text" id="jsonInput" placeholder="Enter JSON" />
+      <button id="submitBtn">Submit</button>
+      <p id="error" class="error"></p>
+      <div id="responseContainer" class="hidden">
+        <div>
+          <label
+            ><input type="checkbox" id="charactersToggle" checked />
+            Characters</label
+          >
+          <label
+            ><input type="checkbox" id="numbersToggle" checked /> Numbers</label
+          >
+          <label
+            ><input type="checkbox" id="highestAlphabetToggle" checked />
+            Highest Alphabet</label
+          >
+        </div>
+        <div id="charactersSection" class="section">
+          Characters: <span id="characters"></span>
+        </div>
+        <div id="numbersSection" class="section">
+          Numbers: <span id="numbers"></span>
+        </div>
+        <div id="highestAlphabetSection" class="section">
+          Highest Alphabet: <span id="highestAlphabet"></span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
